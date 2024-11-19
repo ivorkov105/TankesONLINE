@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="600" prefWidth="800" spacing="15" style="-fx-background-color: #1c1c1c;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rgz.tamp.tankesonline.reg.RegController">
+
+    <!-- Название окна -->
+    <Text fill="white" style="-fx-font-size: 24px; -fx-font-weight: bold;" text="TankesONLINE" />
+
+    <!-- Заголовок -->
+    <Text fill="white" style="-fx-font-size: 30px;" text="РЕГИСТРАЦИЯ" />
+
+    <!-- Поле для ника -->
+    <TextField fx:id="nicknameField" prefHeight="37.0" prefWidth="681.0" promptText="Введите ваш ник" style="-fx-background-color: #333333; -fx-text-fill: white; -fx-prompt-text-fill: gray; -fx-font-size: 16px;" />
+
+    <!-- Поле для пароля -->
+    <PasswordField fx:id="passwordField" prefWidth="300" promptText="Введите ваш пароль" style="-fx-background-color: #333333; -fx-text-fill: white; -fx-prompt-text-fill: gray; -fx-font-size: 16px;" />
+
+    <!-- Кнопка "Зарегистрироваться" -->
+    <Button fx:id="registerButton" onAction="#handleRegister" prefWidth="200" style="-fx-background-color: #555555; -fx-text-fill: white; -fx-font-size: 16px;" text="Зарегистрироваться" />
+
+    <!-- Кнопка "Назад" -->
+    <Button fx:id="backButton" onAction="#handleBack" prefWidth="200" style="-fx-background-color: #555555; -fx-text-fill: white; -fx-font-size: 16px;" text="Назад" />
+
+</VBox>

@@ -1,4 +1,4 @@
-package rgz.tamp.tankesonline;
+package rgz.tamp.tankesonline.reg;
 
 import javafx.fxml.FXML;
 
