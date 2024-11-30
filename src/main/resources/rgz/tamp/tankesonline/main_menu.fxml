@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="rgz.tamp.tankesonline.mainmenu.MainController"
+            style="-fx-background-color: #1c1c1c;" prefWidth="800" prefHeight="600">
+<center>
+<VBox alignment="CENTER" spacing="10" >
+
+   <Text fill="white" style="-fx-font-size: 32px; -fx-font-weight: bold;" text="TankesONLINE" />
+
+   <Text fill="white" style="-fx-font-size: 24px;" text="ГЛАВНОЕ МЕНЮ" />
+
+   <Button prefWidth="200" style="-fx-background-color: #333333; -fx-text-fill: white; -fx-font-size: 16px;" text="Тестовый полигон" />
+
+   <Button prefWidth="200" style="-fx-background-color: #333333; -fx-text-fill: white; -fx-font-size: 16px;" text="Игра по сети" />
+
+   <Button fx:id="exitButt" onAction="#exitHandle" prefWidth="200" style="-fx-background-color: #333333; -fx-text-fill: white; -fx-font-size: 16px;" text="Выход" />
+
+</VBox>
+</center>
+   <bottom>
+      <HBox alignment="BOTTOM_RIGHT" spacing="10" style="-fx-padding: 20;">
+         <Button fx:id="authButt" onAction="#autHandle" text="Войти" prefWidth="100" style="-fx-background-color: #555555; -fx-text-fill: white; -fx-font-size: 14px;" />
+         <Button fx:id="regButt" onAction="#regHandle" text="Регистрация" prefWidth="100" style="-fx-background-color: #555555; -fx-text-fill: white; -fx-font-size: 14px;" />
+      </HBox>
+   </bottom>
+
+</BorderPane>
